@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/bg.jpg);
+  background-size: cover; }
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nixie-clock {
+  display: flex;
+  font-size: 400px;
+  font-family: 'Oxanium', cursive;
+  line-height: 0.68;
+  color: #ffd900;
+  text-shadow: 0 0 100px #ff9d00;
+  position: relative; }
+  .nixie-clock .hours {
+    display: flex; }
+    .nixie-clock .hours .tensOfHours {
+      position: relative;
+      display: inline-block; }
+      .nixie-clock .hours .tensOfHours div:first-child {
+        opacity: 1;
+        transition: opacity 1s;
+        position: absolute;
+        background: none; }
+      .nixie-clock .hours .tensOfHours div:last-child {
+        opacity: 0;
+        transition: opacity 1s;
+        background: none; }
+    .nixie-clock .hours .unitsOfHours {
+      position: relative;
+      display: inline-block; }
+      .nixie-clock .hours .unitsOfHours div:first-child {
+        opacity: 1;
+        transition: opacity 1s;
+        position: absolute;
+        background: none; }
+      .nixie-clock .hours .unitsOfHours div:last-child {
+        opacity: 0;
+        transition: opacity 1s;
+        background: none; }
+  .nixie-clock .minutes {
+    display: flex; }
+    .nixie-clock .minutes .tensOfMinutes {
+      position: relative;
+      display: inline-block; }
+      .nixie-clock .minutes .tensOfMinutes div:first-child {
+        opacity: 1;
+        transition: opacity 1s;
+        position: absolute;
+        background: none; }
+      .nixie-clock .minutes .tensOfMinutes div:last-child {
+        opacity: 0;
+        transition: opacity 1s;
+        background: none; }
+    .nixie-clock .minutes .unitsOfMinutes {
+      position: relative;
+      display: inline-block; }
+      .nixie-clock .minutes .unitsOfMinutes div:first-child {
+        opacity: 1;
+        transition: opacity 1s;
+        position: absolute;
+        background: none; }
+      .nixie-clock .minutes .unitsOfMinutes div:last-child {
+        opacity: 0;
+        transition: opacity 1s;
+        background: none; }
+  .nixie-clock .seconds {
+    display: flex; }
+    .nixie-clock .seconds .tensOfSeconds {
+      position: relative;
+      display: inline-block; }
+      .nixie-clock .seconds .tensOfSeconds div:first-child {
+        opacity: 1;
+        transition: opacity 1s;
+        position: absolute;
+        background: none; }
+      .nixie-clock .seconds .tensOfSeconds div:last-child {
+        opacity: 0;
+        transition: opacity 1s;
+        background: none; }
+    .nixie-clock .seconds .unitsOfSeconds {
+      position: relative;
+      display: inline-block; }
+      .nixie-clock .seconds .unitsOfSeconds div:first-child {
+        opacity: 1;
+        transition: opacity 1s;
+        position: absolute;
+        background: none; }
+      .nixie-clock .seconds .unitsOfSeconds div:last-child {
+        opacity: 0;
+        transition: opacity 1s; }
+  .nixie-clock .dots {
+    position: relative;
+    top: -15px; }
+
+/*# sourceMappingURL=style.css.map */

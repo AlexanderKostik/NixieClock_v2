@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap');
+
+
+body{
+  margin: 0;
+  padding: 0;
+  // background-color: #505050;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+
+
+  
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.nixie-clock{
+  display: flex;
+  
+  font-size: 400px;
+  font-family: 'Oxanium', cursive;
+
+
+  line-height: 0.68;
+  // color: #ffCC00;
+  color: #ffd900;
+  // text-shadow: 0 0 25px #FF0000;
+  // text-shadow: 0 0 10px gold;
+  // text-shadow: 0 0 20px gold;
+  // text-shadow: 0 0 30px rgb(255, 157, 0);
+  text-shadow: 0 0 100px rgb(255, 157, 0);
+  position: relative;
+  
+
+  .hours{
+    display: flex;
+
+    .tensOfHours{
+      position: relative;
+      display: inline-block;
+
+      & div:first-child{
+          opacity: 1;
+          transition: opacity 1s;
+          position: absolute;
+          background: none;
+      }
+
+      & div:last-child{
+          opacity: 0;
+          transition: opacity 1s;
+          background: none;
+      }
+
+    }
+
+    .unitsOfHours{
+      position: relative;
+      display: inline-block;
+
+      & div:first-child{
+          opacity: 1;
+          transition: opacity 1s;
+          position: absolute;
+          background: none;
+      }
+
+      & div:last-child{
+          opacity: 0;
+          transition: opacity 1s;
+          background: none;
+      }
+
+    }
+
+}
+
+  .minutes{
+    display: flex;
+    
+
+    .tensOfMinutes{
+      position: relative;
+      display: inline-block;
+
+      & div:first-child{
+          opacity: 1;
+          transition: opacity 1s;
+          position: absolute;
+          background: none;
+      }
+
+      & div:last-child{
+          opacity: 0;
+          transition: opacity 1s;
+          background: none;
+      }
+
+    }
+
+    .unitsOfMinutes{
+      position: relative;
+      display: inline-block;
+
+      & div:first-child{
+          opacity: 1;
+          transition: opacity 1s;
+          position: absolute;
+          background: none;
+      }
+
+      & div:last-child{
+          opacity: 0;
+          transition: opacity 1s;
+          background: none;
+      }
+
+    }
+
+  }
+
+  .seconds{
+    display: flex;
+
+    .tensOfSeconds{
+      position: relative;
+      display: inline-block;
+
+      & div:first-child{
+          opacity: 1;
+          transition: opacity 1s;
+          position: absolute;
+          background: none;
+      }
+
+      & div:last-child{
+          opacity: 0;
+          transition: opacity 1s;
+          background: none;
+      }
+
+    }
+
+    .unitsOfSeconds{
+      position: relative;
+      display: inline-block;
+
+      & div:first-child{
+          opacity: 1;
+          transition: opacity 1s;
+          position: absolute;
+          background: none;
+      }
+
+      & div:last-child{
+          opacity: 0;
+          transition: opacity 1s;
+          
+      }
+
+    }
+
+  }
+
+
+  .dots{
+    position: relative;
+    top: -15px;  
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
