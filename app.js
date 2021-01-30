@@ -1,18 +1,19 @@
-let firstChildTensOfHours = document.querySelector('.tensOfHours div:first-child');
-let lastChildTensOfHours = document.querySelector('.tensOfHours div:last-child');
-let firstChildUnitsOfHours = document.querySelector('.unitsOfHours div:first-child');
-let lastChildUnitsOfHours = document.querySelector('.unitsOfHours div:last-child');
+const firstChildTensOfHours = document.querySelector('.tensOfHours div:first-child');
+const lastChildTensOfHours = document.querySelector('.tensOfHours div:last-child');
+const firstChildUnitsOfHours = document.querySelector('.unitsOfHours div:first-child');
+const lastChildUnitsOfHours = document.querySelector('.unitsOfHours div:last-child');
 
-let firstChildTensOfMinuts = document.querySelector('.tensOfMinutes div:first-child');
-let lastChildTensOfMinuts = document.querySelector('.tensOfMinutes div:last-child');
-let firstChildUnitsOfMinutes = document.querySelector('.unitsOfMinutes div:first-child');
-let lastChildUnitsOfMinutes = document.querySelector('.unitsOfMinutes div:last-child');
+const firstChildTensOfMinuts = document.querySelector('.tensOfMinutes div:first-child');
+const lastChildTensOfMinuts = document.querySelector('.tensOfMinutes div:last-child');
+const firstChildUnitsOfMinutes = document.querySelector('.unitsOfMinutes div:first-child');
+const lastChildUnitsOfMinutes = document.querySelector('.unitsOfMinutes div:last-child');
 
-let firstChildTensOfSeconds = document.querySelector('.tensOfSeconds div:first-child');
-let lastChildTensOfSeconds = document.querySelector('.tensOfSeconds div:last-child');
-let firstChildUnitsOfSeconds = document.querySelector('.unitsOfSeconds div:first-child');
-let lastChildUnitsOfSeconds = document.querySelector('.unitsOfSeconds div:last-child');
+const firstChildTensOfSeconds = document.querySelector('.tensOfSeconds div:first-child');
+const lastChildTensOfSeconds = document.querySelector('.tensOfSeconds div:last-child');
+const firstChildUnitsOfSeconds = document.querySelector('.unitsOfSeconds div:first-child');
+const lastChildUnitsOfSeconds = document.querySelector('.unitsOfSeconds div:last-child');
 
+let showMenu = 0;
 
 
 function showTime() {
@@ -174,111 +175,28 @@ function showTime() {
 
 }
 
-setInterval(showTime, 1000);
+//setInterval(showTime, 1000);
 
 
+document.querySelector('.humburger-menu').onclick = function () {
 
-
-
-/*
------- Data Types ------
-1) number
-2) string
-3) boolean
-4) underfined
-5) null
-6) object
-7) symbol (ES6)
-
-*/
-
-let num1 = 5;
-console.log('num1 = 5 --> typeof num1 =', typeof num1); // number
-let num2 = 5.5;
-console.log('num2 = 5.5 --> typeof num2 =', typeof num2); // number
-let num3 = 5e3; // 5000
-console.log('num3 = 5e3 = 5000 --> typeof num3 =', typeof num3); // number
-let num4 = 5e-3; // 0.005
-console.log('num4 = 5e-3 = 0.005 --> typeof num4 =', typeof num4); // number
-console.log('');
-let str = 'Hello World';
-console.log('str = \'Hello\' --> typeof str =', typeof str); // string
-console.log('');
-let areYouOk = true;
-console.log('areYouOk = true --> typeof areYouOk =', typeof areYouOk); // boolean
-console.log('');
-let user;
-console.log('typeof user =', typeof user) // underfind
-console.log('');
-console.log('typeof null =', typeof null) // object
-console.log('');
-console.log('typeof Symbol() =', typeof Symbol()) // symbol
-console.log('');
-//-------------------------------------------------------------
-function f1() { }; // создаем функцию по имени f1
-let str2 = `Такого типа данных как function НЕ существует.Это относится к неточностям JS,
-на которые пошли разработчики дабы иметь возможность отличать object от function.`;
-console.log(`typeof f1 = ${typeof f1} --> ${str2}`); // function
-
-
-
-let tmp;
-let t = 1 + '2';
-console.log('typeof 1 + \'2\' =', typeof t)
-tmp = 1 + '2'; // string, потому что для строк определена конкатенация (сложение строк)
-tmp = '5' + 2; // string
-tmp = 4 + '5' + 1; // string
-tmp = 24 + 5 + 'px'; // string
-tmp = '24' - 5 + 'px'; // string
-tmp = 'px' + 20; // string
-
-tmp = 1 - '2'; // number, потому что для строк не определена операция вычитания 
-tmp = '5' - 2; // number
-tmp = 4 - '5' + 8; // number
-tmp = '4' * '8'; // number
-
-tmp = 'px' + 20 - 5; // NaN (при переведении рх20 в число мы получим NaN, а NaN-5=NaN )
-console.log('typeof NaN =', typeof NaN); // number <!!!!>
-
-
-
-
-
-console.log('null + 2 =', null + 2); // 2
-console.log('typeof null + 7 =', typeof null + 7); // object7 <!!!!>
-
-console.log(typeof null)
-console.log(typeof underfined)
-
-
-
-/*
-    == and ===
- ==  сравнение с приведением типов
- === сравнение без приведением типов
-*/
-let a = 1;
-let b = '1';
-
-if (a == b) {
-  console.log('a==b');
-} else {
-  console.log('a!=b');
+  showMenu = 1;
+  document.querySelector('.sidenav').style.width = "300px";
+  document.querySelector('.fa-times-circle').style.display = "block";
+  this.style.display = "none";
+  // console.log(this);
 }
 
-if (a === b) {
-  console.log('a==b');
-} else {
-  console.log('a!=b');
+
+document.querySelector('.fa-times-circle').onclick = function () {
+
+  showMenu = 0;
+  document.querySelector('.sidenav').style.width = "0px";
+  document.querySelector('.fa-times-circle').style.display = "none";
+  document.querySelector('.humburger-menu').style.display = "block";
 }
 
 
 
 
 
-
-
-
-
-  // console.log('tmp =', tmp);
-  // console.log(typeof tmp);

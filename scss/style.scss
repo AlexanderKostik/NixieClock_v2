@@ -182,6 +182,58 @@ body{
 
 
 
+.humburger-menu {
+  box-sizing: border-box;
+  width: 70px;
+  padding: 10px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  // z-index: 0;
+  cursor:pointer;
+  // border: 1px solid red;
+
+  div {
+    width: 100%;
+    height: 6px;
+    border-radius: 20px;
+    background-color: #C0C0C0;
+  }
+
+  div:nth-child(2) {
+    margin:7px 0px;
+  }
+
+  &:hover div{
+    background-color: #fff;
+  }
+}
+
+
+
+
+.sidenav{
+  width: 0px;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  background-color: chocolate;
+  transition: width 1s ease-out;
+
+  .fa-times-circle{
+    color: #C0C0C0;
+    position: absolute;
+    display: none;
+    left: 102%;
+    top:5px;
+
+    &:hover{color: #fff;}
+  }
+}
+
+
+
+
 
 
 
