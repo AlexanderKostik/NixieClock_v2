@@ -175,13 +175,13 @@ function showTime() {
 
 }
 
-//setInterval(showTime, 1000);
+setInterval(showTime, 1000);
 
 
 document.querySelector('.humburger-menu').onclick = function () {
 
   showMenu = 1;
-  document.querySelector('.sidenav').style.width = "300px";
+  document.querySelector('.aside').style.width = "300px";
   document.querySelector('.fa-times-circle').style.display = "block";
   this.style.display = "none";
   // console.log(this);
@@ -191,7 +191,7 @@ document.querySelector('.humburger-menu').onclick = function () {
 document.querySelector('.fa-times-circle').onclick = function () {
 
   showMenu = 0;
-  document.querySelector('.sidenav').style.width = "0px";
+  document.querySelector('.aside').style.width = "0px";
   document.querySelector('.fa-times-circle').style.display = "none";
   document.querySelector('.humburger-menu').style.display = "block";
 }

@@ -16,7 +16,7 @@ body {
 
 .nixie-clock {
   display: flex;
-  font-size: 400px;
+  font-size: 200px;
   font-family: 'Oxanium', cursive;
   line-height: 0.68;
   color: #ffd900;
@@ -148,21 +148,21 @@ body {
   background-color: #fff;
 }
 
-.sidenav {
+.aside {
   width: 0px;
   height: 100vh;
-  position: relative;
+  position: fixed;
   z-index: 1;
   background-color: chocolate;
   transition: width 1s ease-out;
 }
-.sidenav .fa-times-circle {
+.aside .fa-times-circle {
   color: #C0C0C0;
   position: absolute;
   display: none;
   left: 102%;
   top: 5px;
 }
-.sidenav .fa-times-circle:hover {
+.aside .fa-times-circle:hover {
   color: #fff;
 }
