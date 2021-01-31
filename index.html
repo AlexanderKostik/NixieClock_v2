@@ -12,14 +12,33 @@
 
 <body>
 
-  <div class="humburger-menu">
+  <div class="humburger-icon">
     <div></div>
     <div></div>
     <div></div>
   </div>
 
-  <div class="aside">
+  <div class="aside-menu">
     <i class="far fa-times-circle fa-3x"></i>
+
+    <div class="inner">
+
+      <form>
+        <label for="fontSize-input">Размер&nbsp;шрифта:</label>
+        <input class="fontSize-input" id="fontSize-input" type="number" min="0" max="1000">
+      </form>
+
+      <form>
+        <label for="digitColor-input">Цвет&nbsp;цифр:</label>
+        <input id="digitColor-input" type="color" value="#ffd800">
+      </form>
+
+      <form>
+        <label for="shadowColor-input">Цвет&nbsp;свечения:</label>
+        <input id="shadowColor-input" type="color" value="#ffd800">
+      </form>
+
+    </div>
   </div>
 
   <div class="container">

@@ -6,10 +6,7 @@ body{
   padding: 0;
   // background-color: #505050;
   background-image: url(../img/bg.jpg);
-  background-size: cover;
-
-
-  
+  background-size: cover; 
 }
 
 .container{
@@ -19,6 +16,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+
+  // background-color: peru;
 }
 
 
@@ -182,7 +181,7 @@ body{
 
 
 
-.humburger-menu {
+.humburger-icon {
   box-sizing: border-box;
   width: 70px;
   padding: 10px;
@@ -210,26 +209,80 @@ body{
 }
 
 
-
-
-.aside{
+.aside-menu{
+  box-sizing: border-box;
   width: 0px;
   height: 100vh;
-  // position: relative;
   position: fixed;
+  left: 0px;
+  top: 0px;
+  overflow-x: hidden;
   z-index: 1;
-  background-color: chocolate;
+  // padding: 10px;
+  // background-color: rgb(30, 168, 210);
+  background-color: rgba($color: #000000, $alpha: 0.7);
   transition: width 1s ease-out;
 
   .fa-times-circle{
     color: #C0C0C0;
     position: absolute;
-    display: none;
+    // display: none;
     left: 102%;
     top:5px;
 
     &:hover{color: #fff;}
   }
+
+
+  .inner{
+
+    width: inherit;
+    margin: 10px;
+
+    label{
+      display: block;
+      font-size: 25px;
+      color: white;
+      overflow-x: hidden;
+    }
+
+
+    
+      // убираем стрелки/спиннеры с input[type=number]
+      // input::-webkit-outer-spin-button,
+      // input::-webkit-inner-spin-button {
+      //   -webkit-appearance: none;
+      //   margin: 0;
+      // }
+
+      input[type=number]{
+        box-sizing: border-box;
+        width: 60%;
+        padding: 5px 0px;
+        margin: 5px 0px;
+        font-size: 20px;
+        // border:none;
+        // -moz-appearance: textfield;
+      }
+
+      input[type="color"]{
+        display: block;
+        box-sizing: border-box;
+        height: 50px;
+        width: 60%;
+      }
+
+
+
+  }
+
+
+
+
+
+
+
+
 }
 
 

@@ -178,12 +178,13 @@ function showTime() {
 setInterval(showTime, 1000);
 
 
-document.querySelector('.humburger-menu').onclick = function () {
+document.querySelector('.humburger-icon').onclick = function () {
 
   showMenu = 1;
-  document.querySelector('.aside').style.width = "300px";
-  document.querySelector('.fa-times-circle').style.display = "block";
   this.style.display = "none";
+  document.querySelector('.aside-menu').style.width = "300px";
+  document.querySelector('.aside-menu').style.overflowX = "visible";
+
   // console.log(this);
 }
 
@@ -191,10 +192,27 @@ document.querySelector('.humburger-menu').onclick = function () {
 document.querySelector('.fa-times-circle').onclick = function () {
 
   showMenu = 0;
-  document.querySelector('.aside').style.width = "0px";
-  document.querySelector('.fa-times-circle').style.display = "none";
-  document.querySelector('.humburger-menu').style.display = "block";
+  document.querySelector('.aside-menu').style.width = "0px";
+  // document.querySelector('.aside').style.visibility = "hidden";
+  document.querySelector('.aside-menu').style.overflowX = "hidden";
+  document.querySelector('.humburger-icon').style.display = "block";
 }
+
+
+// document.getElementById('fontSize-input').addEventListener('keypress', function (e) {
+document.querySelector('.fontSize-input').addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    document.querySelector('.nixie-clock').style.fontSize = this.value + "px";
+    console.log('hi');
+    // Event.preventDefault();
+  }
+  // if (13 == e.keyCode) {
+  //   console.log('hi');
+  // }
+
+})
+
+
 
 
 
