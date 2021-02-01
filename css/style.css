@@ -142,7 +142,6 @@ body {
     .aside-menu .inner section {
       margin: 20px 0px; }
     .aside-menu .inner label {
-      display: block;
       font-size: 25px;
       color: white;
       overflow-x: hidden;
