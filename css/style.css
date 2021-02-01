@@ -3,16 +3,14 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(../img/bg.jpg);
-  background-size: cover;
-}
+  background-size: cover; }
 
 .container {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .nixie-clock {
   display: flex;
@@ -21,110 +19,87 @@ body {
   line-height: 0.68;
   color: #ffd900;
   text-shadow: 0 0 100px #ff9d00;
-  position: relative;
-}
-.nixie-clock .hours {
-  display: flex;
-}
-.nixie-clock .hours .tensOfHours {
-  position: relative;
-  display: inline-block;
-}
-.nixie-clock .hours .tensOfHours div:first-child {
-  opacity: 1;
-  transition: opacity 1s;
-  position: absolute;
-  background: none;
-}
-.nixie-clock .hours .tensOfHours div:last-child {
-  opacity: 0;
-  transition: opacity 1s;
-  background: none;
-}
-.nixie-clock .hours .unitsOfHours {
-  position: relative;
-  display: inline-block;
-}
-.nixie-clock .hours .unitsOfHours div:first-child {
-  opacity: 1;
-  transition: opacity 1s;
-  position: absolute;
-  background: none;
-}
-.nixie-clock .hours .unitsOfHours div:last-child {
-  opacity: 0;
-  transition: opacity 1s;
-  background: none;
-}
-.nixie-clock .minutes {
-  display: flex;
-}
-.nixie-clock .minutes .tensOfMinutes {
-  position: relative;
-  display: inline-block;
-}
-.nixie-clock .minutes .tensOfMinutes div:first-child {
-  opacity: 1;
-  transition: opacity 1s;
-  position: absolute;
-  background: none;
-}
-.nixie-clock .minutes .tensOfMinutes div:last-child {
-  opacity: 0;
-  transition: opacity 1s;
-  background: none;
-}
-.nixie-clock .minutes .unitsOfMinutes {
-  position: relative;
-  display: inline-block;
-}
-.nixie-clock .minutes .unitsOfMinutes div:first-child {
-  opacity: 1;
-  transition: opacity 1s;
-  position: absolute;
-  background: none;
-}
-.nixie-clock .minutes .unitsOfMinutes div:last-child {
-  opacity: 0;
-  transition: opacity 1s;
-  background: none;
-}
-.nixie-clock .seconds {
-  display: flex;
-}
-.nixie-clock .seconds .tensOfSeconds {
-  position: relative;
-  display: inline-block;
-}
-.nixie-clock .seconds .tensOfSeconds div:first-child {
-  opacity: 1;
-  transition: opacity 1s;
-  position: absolute;
-  background: none;
-}
-.nixie-clock .seconds .tensOfSeconds div:last-child {
-  opacity: 0;
-  transition: opacity 1s;
-  background: none;
-}
-.nixie-clock .seconds .unitsOfSeconds {
-  position: relative;
-  display: inline-block;
-}
-.nixie-clock .seconds .unitsOfSeconds div:first-child {
-  opacity: 1;
-  transition: opacity 1s;
-  position: absolute;
-  background: none;
-}
-.nixie-clock .seconds .unitsOfSeconds div:last-child {
-  opacity: 0;
-  transition: opacity 1s;
-}
-.nixie-clock .dots {
-  position: relative;
-  top: -15px;
-}
+  position: relative; }
+  .nixie-clock .hours {
+    display: flex; }
+    .nixie-clock .hours .tensOfHours {
+      position: relative;
+      display: inline-block; }
+      .nixie-clock .hours .tensOfHours div:first-child {
+        opacity: 1;
+        transition: opacity 1s;
+        position: absolute;
+        background: none; }
+      .nixie-clock .hours .tensOfHours div:last-child {
+        opacity: 0;
+        transition: opacity 1s;
+        background: none; }
+    .nixie-clock .hours .unitsOfHours {
+      position: relative;
+      display: inline-block; }
+      .nixie-clock .hours .unitsOfHours div:first-child {
+        opacity: 1;
+        transition: opacity 1s;
+        position: absolute;
+        background: none; }
+      .nixie-clock .hours .unitsOfHours div:last-child {
+        opacity: 0;
+        transition: opacity 1s;
+        background: none; }
+  .nixie-clock .minutes {
+    display: flex; }
+    .nixie-clock .minutes .tensOfMinutes {
+      position: relative;
+      display: inline-block; }
+      .nixie-clock .minutes .tensOfMinutes div:first-child {
+        opacity: 1;
+        transition: opacity 1s;
+        position: absolute;
+        background: none; }
+      .nixie-clock .minutes .tensOfMinutes div:last-child {
+        opacity: 0;
+        transition: opacity 1s;
+        background: none; }
+    .nixie-clock .minutes .unitsOfMinutes {
+      position: relative;
+      display: inline-block; }
+      .nixie-clock .minutes .unitsOfMinutes div:first-child {
+        opacity: 1;
+        transition: opacity 1s;
+        position: absolute;
+        background: none; }
+      .nixie-clock .minutes .unitsOfMinutes div:last-child {
+        opacity: 0;
+        transition: opacity 1s;
+        background: none; }
+  .nixie-clock .seconds {
+    display: flex; }
+    .nixie-clock .seconds .tensOfSeconds {
+      position: relative;
+      display: inline-block; }
+      .nixie-clock .seconds .tensOfSeconds div:first-child {
+        opacity: 1;
+        transition: opacity 1s;
+        position: absolute;
+        background: none; }
+      .nixie-clock .seconds .tensOfSeconds div:last-child {
+        opacity: 0;
+        transition: opacity 1s;
+        background: none; }
+    .nixie-clock .seconds .unitsOfSeconds {
+      position: relative;
+      display: inline-block; }
+      .nixie-clock .seconds .unitsOfSeconds div:first-child {
+        opacity: 1;
+        transition: opacity 1s;
+        position: absolute;
+        background: none; }
+      .nixie-clock .seconds .unitsOfSeconds div:last-child {
+        opacity: 0;
+        transition: opacity 1s; }
+  .nixie-clock .dots {
+    position: relative;
+    top: -15px; }
 
 .humburger-icon {
   box-sizing: border-box;
@@ -133,20 +108,16 @@ body {
   position: fixed;
   left: 0px;
   top: 0px;
-  cursor: pointer;
-}
-.humburger-icon div {
-  width: 100%;
-  height: 6px;
-  border-radius: 20px;
-  background-color: #C0C0C0;
-}
-.humburger-icon div:nth-child(2) {
-  margin: 7px 0px;
-}
-.humburger-icon:hover div {
-  background-color: #fff;
-}
+  cursor: pointer; }
+  .humburger-icon div {
+    width: 100%;
+    height: 6px;
+    border-radius: 20px;
+    background-color: #C0C0C0; }
+  .humburger-icon div:nth-child(2) {
+    margin: 7px 0px; }
+  .humburger-icon:hover div {
+    background-color: #fff; }
 
 .aside-menu {
   box-sizing: border-box;
@@ -158,37 +129,33 @@ body {
   overflow-x: hidden;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.7);
-  transition: width 1s ease-out;
-}
-.aside-menu .fa-times-circle {
-  color: #C0C0C0;
-  position: absolute;
-  left: 102%;
-  top: 5px;
-}
-.aside-menu .fa-times-circle:hover {
-  color: #fff;
-}
-.aside-menu .inner {
-  width: inherit;
-  margin: 10px;
-}
-.aside-menu .inner label {
-  display: block;
-  font-size: 25px;
-  color: white;
-  overflow-x: hidden;
-}
-.aside-menu .inner input[type=number] {
-  box-sizing: border-box;
-  width: 60%;
-  padding: 5px 0px;
-  margin: 5px 0px;
-  font-size: 20px;
-}
-.aside-menu .inner input[type="color"] {
-  display: block;
-  box-sizing: border-box;
-  height: 50px;
-  width: 60%;
-}
+  transition: width 1s ease-out; }
+  .aside-menu .fa-times-circle {
+    color: #C0C0C0;
+    position: absolute;
+    left: 102%;
+    top: 5px; }
+    .aside-menu .fa-times-circle:hover {
+      color: #fff; }
+  .aside-menu .inner {
+    margin: 0px 20px; }
+    .aside-menu .inner section {
+      margin: 20px 0px; }
+    .aside-menu .inner label {
+      display: block;
+      font-size: 25px;
+      color: white;
+      overflow-x: hidden;
+      margin-bottom: 5px; }
+    .aside-menu .inner input[type=number] {
+      box-sizing: border-box;
+      width: 60%;
+      padding: 5px 0px;
+      font-size: 20px; }
+    .aside-menu .inner input[type="color"] {
+      display: block;
+      box-sizing: border-box;
+      height: 50px;
+      width: 60%; }
+
+/*# sourceMappingURL=style.css.map */

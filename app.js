@@ -13,6 +13,12 @@ const lastChildTensOfSeconds = document.querySelector('.tensOfSeconds div:last-c
 const firstChildUnitsOfSeconds = document.querySelector('.unitsOfSeconds div:first-child');
 const lastChildUnitsOfSeconds = document.querySelector('.unitsOfSeconds div:last-child');
 
+const hunburgerIcon = document.querySelector('.humburger-icon');
+const closeIcon = document.querySelector('.fa-times-circle');
+const asideMenu = document.querySelector('.aside-menu');
+
+const nixieClock = document.querySelector('.nixie-clock');
+
 let showMenu = 0;
 
 
@@ -178,39 +184,49 @@ function showTime() {
 setInterval(showTime, 1000);
 
 
-document.querySelector('.humburger-icon').onclick = function () {
+hunburgerIcon.onclick = function () {
 
   showMenu = 1;
   this.style.display = "none";
-  document.querySelector('.aside-menu').style.width = "300px";
-  document.querySelector('.aside-menu').style.overflowX = "visible";
+  asideMenu.style.width = "300px";
+  asideMenu.style.overflowX = "visible";
 
   // console.log(this);
 }
 
 
-document.querySelector('.fa-times-circle').onclick = function () {
+closeIcon.onclick = function () {
 
   showMenu = 0;
-  document.querySelector('.aside-menu').style.width = "0px";
+  asideMenu.style.width = "0px";
   // document.querySelector('.aside').style.visibility = "hidden";
-  document.querySelector('.aside-menu').style.overflowX = "hidden";
-  document.querySelector('.humburger-icon').style.display = "block";
+  asideMenu.style.overflowX = "hidden";
+  hunburgerIcon.style.display = "block";
 }
 
 
-// document.getElementById('fontSize-input').addEventListener('keypress', function (e) {
 document.querySelector('.fontSize-input').addEventListener('keypress', function (e) {
-  if (e.key === 'Enter') {
-    document.querySelector('.nixie-clock').style.fontSize = this.value + "px";
-    console.log('hi');
-    // Event.preventDefault();
-  }
-  // if (13 == e.keyCode) {
-  //   console.log('hi');
-  // }
 
+  if (e.key === 'Enter') {
+    nixieClock.style.fontSize = this.value + "px";
+  }
+
+  // if (13 == e.keyCode) {
+  //   console.log('it was pressed  Enter');
+  // } else {
+  //   console.log('it was pressed any key');
+  // }
 })
+
+
+document.querySelector('.digitColor-input').addEventListener('input', function () {
+
+  nixieClock.style.color = this.value;
+})
+
+
+
+
 
 
 
