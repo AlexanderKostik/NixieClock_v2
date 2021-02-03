@@ -156,5 +156,9 @@ body {
       box-sizing: border-box;
       height: 50px;
       width: 60%; }
+    .aside-menu .inner .mode {
+      overflow: hidden; }
+      .aside-menu .inner .mode__inner {
+        width: 300px; }
 
 /*# sourceMappingURL=style.css.map */

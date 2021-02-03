@@ -278,8 +278,18 @@ body{
       }
 
 
+      .mode{
+        overflow: hidden;
+        &__inner{
+          width: 300px;
+        }
+      }
+
+
 
   }
+
+ 
 
 
 
